@@ -1,9 +1,492 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dhulasiyamma Manikandan - Java Backend and Full Stack Developer"
+    />
+    <title>Dhulasiyamma Manikandan | Developer Resume</title>
+    <style>
+      :root {
+        --text: #1f2937;
+        --muted: #5b6472;
+        --heading: #111827;
+        --accent: #2563eb;
+        --border: #dbe2ea;
+        --bg: #f4f6f8;
+        --card: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.55;
+      }
+      .page {
+        max-width: 1050px;
+        margin: 32px auto;
+        background: var(--card);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      }
+      header {
+        padding: 38px 46px 28px;
+        border-bottom: 3px solid var(--accent);
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 34px;
+        color: var(--heading);
+      }
+      .headline {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--accent);
+        margin-bottom: 14px;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      main {
+        padding: 30px 46px 44px;
+      }
+      section {
+        margin-bottom: 28px;
+      }
+      h2 {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--heading);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+        margin: 0 0 15px;
+      }
+      .summary {
+        font-size: 15px;
+      }
+      .job {
+        margin-bottom: 24px;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: baseline;
+      }
+      .job-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--heading);
+      }
+      .company {
+        font-weight: 600;
+      }
+      .date {
+        color: var(--muted);
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      ul {
+        margin: 8px 0 0 20px;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 10px 20px;
+        font-size: 14px;
+      }
+      .skill-label {
+        font-weight: 700;
+        color: var(--heading);
+      }
+      .skill-value {
+        color: var(--text);
+      }
+      .education {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .print-btn {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        border: 0;
+        border-radius: 8px;
+        padding: 11px 16px;
+        background: var(--accent);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+      }
+      @media (max-width: 700px) {
+        .page {
+          margin: 0;
+        }
+        header,
+        main {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        .job-header,
+        .education {
+          display: block;
+        }
+        .date {
+          display: block;
+          margin-top: 3px;
+        }
+        .skills {
+          grid-template-columns: 1fr;
+          gap: 3px;
+          margin-bottom: 12px;
+        }
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          margin: 0;
+          box-shadow: none;
+          max-width: none;
+        }
+        .print-btn {
+          display: none;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Dhulasiyamma Manikandan</h1>
+        <div class="headline">
+          Java Backend Developer | Full Stack Developer
+        </div>
+        <div class="contact">
+          <span>Maitland, New South Wales, Australia</span>
+          <span>•</span>
+          <a href="mailto:dhulasiyamma.r@gmail.com">dhulasiyamma.r@gmail.com</a>
+          <span>•</span>
+          <span>+61 439 090 303</span>
+          <span>•</span>
+          <a
+            href="https://github.com/dhulasiyammar"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </header>
 
-<body>
-  <h1>Dhulasiyamma Manikandan</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+      <main>
+        <section>
+          <h2>Professional Summary</h2>
+          <p class="summary">
+            Java Backend Developer with 12+ years of experience designing and
+            delivering enterprise-grade, cloud-native applications using Java,
+            Spring Boot, AWS and modern front-end frameworks in React. Proven
+            expertise in leading full-stack teams, architecting microservices,
+            driving API integrations, and delivering scalable cloud solutions.
+            Strong experience in Agile environments and mentoring developers.
+            Available in Sydney for 6-month contract (extendable) | Hybrid |
+            Full-Time | Remote.
+          </p>
+        </section>
 
+        <section>
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Senior Developer</div>
+                <div class="company">Xgenworks Private Limited</div>
+              </div>
+              <div class="date">March 2025 – October 2025</div>
+            </div>
+            <ul>
+              <li>
+                Developed enterprise access management and workflow automation
+                solutions supporting authentication, application onboarding,
+                emergency access, and user de-provisioning processes.
+              </li>
+              <li>
+                Built and enhanced application modules based on business
+                requirements and client-specific workflow needs.
+              </li>
+              <li>
+                Developed frontend and backend components using React and
+                Node.js, with MongoDB for data persistence.
+              </li>
+              <li>
+                Implemented and customized workflow-based automation to
+                streamline user access and authentication processes.
+              </li>
+              <li>
+                Participated in bug fixes, enhancements, testing, deployment,
+                and application maintenance.
+              </li>
+              <li>
+                Collaborated within an Agile development team to deliver
+                customer-focused solutions.
+              </li>
+              <li>
+                Developed and maintained unit test cases using Jest and React
+                Testing Library to ensure application quality and reliability.
+              </li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Senior Software Engineer</div>
+                <div class="company">Mobius Knowledge Services Pvt Ltd</div>
+              </div>
+              <div class="date">April 2016 – April 2024</div>
+            </div>
+            <ul>
+              <li>
+                Collaborated with a cross-functional team to design and develop
+                scalable microservices architecture using Java 8/11/17/21/25 and
+                Spring Boot.
+              </li>
+              <li>
+                Designed and implemented RESTful APIs for high-volume data
+                processing and automation workflows.
+              </li>
+              <li>
+                Built backend services supporting modular enterprise
+                applications with secure API communication.
+              </li>
+              <li>
+                Optimized cloud infrastructure using AWS EC2 Spot Instances and
+                S3, reducing operational cloud costs by 30%.
+              </li>
+              <li>
+                Integrated event-driven messaging architecture using ActiveMQ
+                for asynchronous system communication.
+              </li>
+              <li>
+                Architected and deployed cloud automation solutions across AWS
+                and Microsoft Azure environments.
+              </li>
+              <li>
+                Participated in CI/CD deployment activities and release
+                automation.
+              </li>
+              <li>
+                Performed code reviews, ensured adherence to coding standards,
+                and mentored junior developers.
+              </li>
+              <li>
+                Managed production releases, deployment activities, and
+                participated in client technical discussions.
+              </li>
+              <li>
+                Improved application performance by optimizing PostgreSQL
+                database queries, API response times, and backend services.
+              </li>
+              <li>
+                Built responsive UI and enhanced full-stack features using
+                React, Redux, JavaScript, HTML, and CSS.
+              </li>
+              <li>
+                Implemented Azure Blob Storage integration for secure content
+                and document management.
+              </li>
+              <li>
+                Delivered end-to-end third-party API integrations for seamless
+                external system connectivity.
+              </li>
+              <li>
+                Implemented Spring Security with OAuth 2.0 to secure RESTful
+                APIs through authentication and authorization mechanisms.
+              </li>
+              <li>
+                Led project implementation and production deployment activities
+                across multiple release cycles.
+              </li>
+              <li>
+                Coordinated task allocation, sprint planning, and progress
+                tracking for development team members.
+              </li>
+              <li>
+                Designed and implemented Single Sign-On (SSO) integration
+                between SkillsAlpha and TJM applications for unified student
+                course access.
+              </li>
+              <li>
+                Developed and optimized JPA queries for API data retrieval and
+                persistence operations.
+              </li>
+              <li>
+                Developed DAO persistence layer classes using Spring Framework.
+              </li>
+              <li>
+                Designed and implemented Hibernate entity classes for ORM-based
+                database operations.
+              </li>
+              <li>
+                Developed dynamic and responsive user interfaces using AJAX and
+                jQuery.
+              </li>
+              <li>
+                Designed and implemented the complete Admin Module and Log
+                Lookup Module.
+              </li>
+              <li>
+                Participated in debugging, performance tuning, and application
+                enhancement activities.
+              </li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Software Engineer</div>
+                <div class="company">Prodapt Solutions Pvt. Ltd.</div>
+              </div>
+              <div class="date">November 2011 – April 2016</div>
+            </div>
+            <ul>
+              <li>
+                Developed and maintained enterprise web applications using Java,
+                Spring MVC, JSP, Hibernate, and RESTful Web Services.
+              </li>
+              <li>
+                Designed and implemented scalable business modules to support
+                enterprise customer management processes.
+              </li>
+              <li>
+                Built and integrated APIs across multiple internal applications
+                to enable seamless data exchange.
+              </li>
+              <li>
+                Optimized Hibernate persistence layer and database interactions,
+                improving application performance and response times.
+              </li>
+              <li>
+                Participated in solution design, architecture discussions,
+                sprint planning, and Agile development activities.
+              </li>
+              <li>
+                Supported application deployment and release management across
+                Development, UAT, and Production environments.
+              </li>
+              <li>
+                Performed troubleshooting, defect resolution, and production
+                support activities.
+              </li>
+              <li>
+                Developed DAO and persistence layer components using the Spring
+                Framework.
+              </li>
+              <li>
+                Designed SQL queries, stored procedures, and data migration
+                scripts for secure data transfer operations.
+              </li>
+              <li>
+                Analyzed and resolved production defects and client-reported
+                issues tracked through JIRA.
+              </li>
+              <li>
+                Led end-to-end development activities including requirements
+                gathering, analysis, design, implementation, testing, and
+                deployment.
+              </li>
+              <li>
+                Managed large-scale customer data migration processes and
+                developed complex MSSQL stored procedures and scripts.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <div class="skill-label">Frontend</div>
+            <div class="skill-value">
+              React · Redux · JavaScript · jQuery · JSP · AJAX · HTML5 · CSS3
+            </div>
+
+            <div class="skill-label">Backend & Java</div>
+            <div class="skill-value">
+              Java 8/11/17/21 · Spring Boot · Spring MVC · Microservices · REST
+              APIs · Hibernate · JPA
+            </div>
+
+            <div class="skill-label">API & Integration</div>
+            <div class="skill-value">
+              Swagger UI · Postman · Payment Gateway Integration · Third-Party
+              API Integration
+            </div>
+
+            <div class="skill-label">Cloud</div>
+            <div class="skill-value">
+              AWS (EC2, S3, IAM, Spot Instances) · Microsoft Azure (VM, Blob
+              Storage)
+            </div>
+
+            <div class="skill-label">Messaging</div>
+            <div class="skill-value">Apache Kafka · ActiveMQ · RabbitMQ</div>
+
+            <div class="skill-label">Databases</div>
+            <div class="skill-value">MySQL · PostgreSQL · SQL Server</div>
+
+            <div class="skill-label">Testing</div>
+            <div class="skill-value">JUnit · Jest · React Testing Library</div>
+
+            <div class="skill-label">Build & Version Control</div>
+            <div class="skill-value">Maven · Git · Bitbucket</div>
+
+            <div class="skill-label">Collaboration</div>
+            <div class="skill-value">
+              Jira · Agile/Scrum · Code Reviews · Full SDLC
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="education">
+            <div>
+              <strong>Bachelor of Engineering in Computer Science</strong><br />
+              Periyar Maniammai University, Tamil Nadu, India
+            </div>
+            <div><strong>75%</strong></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
